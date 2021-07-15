@@ -27,3 +27,6 @@ Auth::routes();
 
 
 Route::resource('posts', App\Http\Controllers\PostController::class);
+//Route::resource('truck', App\Http\Controllers\TruckController::class);
+
+Route::resource('images', App\Http\Controllers\ImageController::class);
