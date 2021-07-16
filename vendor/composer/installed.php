@@ -485,12 +485,12 @@
     ),
     'laravel/sail' => 
     array (
-      'pretty_version' => 'v1.8.5',
-      'version' => '1.8.5.0',
+      'pretty_version' => 'v1.8.6',
+      'version' => '1.8.6.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'cab38edc00804700518e110df2677ef34c3dbb2e',
+      'reference' => '51ecfe0f048f8f8e6c5617e02a1f67ca22817c98',
     ),
     'laravel/tinker' => 
     array (
@@ -557,12 +557,12 @@
     ),
     'monolog/monolog' => 
     array (
-      'pretty_version' => '2.3.0',
-      'version' => '2.3.0.0',
+      'pretty_version' => '2.3.1',
+      'version' => '2.3.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'df991fd88693ab703aa403413d83e15f688dae33',
+      'reference' => '9738e495f288eec0b187e310b7cdbbb285777dbe',
     ),
     'mtdowling/cron-expression' => 
     array (

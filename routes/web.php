@@ -21,12 +21,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Auth::routes();
 
 
-Route::resource('posts', App\Http\Controllers\PostController::class);
-//Route::resource('truck', App\Http\Controllers\TruckController::class);
-
-Route::resource('images', App\Http\Controllers\ImageController::class);
+Route::resource('trucks', App\Http\Controllers\TruckController::class);
+Route::resource('users', App\Http\Controllers\UserController::class);

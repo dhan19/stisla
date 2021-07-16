@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f
+class ComposerStaticInit7e3e88e452cadea7eed117fc64746a24
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -555,8 +555,6 @@ class ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
-        'App\\DataTables\\ImageDataTable' => __DIR__ . '/../..' . '/app/DataTables/ImageDataTable.php',
-        'App\\DataTables\\PostDataTable' => __DIR__ . '/../..' . '/app/DataTables/PostDataTable.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AppBaseController' => __DIR__ . '/../..' . '/app/Http/Controllers/AppBaseController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -567,9 +565,6 @@ class ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
-        'App\\Http\\Controllers\\ImageController' => __DIR__ . '/../..' . '/app/Http/Controllers/ImageController.php',
-        'App\\Http\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostController.php',
-        'App\\Http\\Controllers\\TruckController' => __DIR__ . '/../..' . '/app/Http/Controllers/TruckController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -579,13 +574,6 @@ class ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Http\\Requests\\CreateImageRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateImageRequest.php',
-        'App\\Http\\Requests\\CreatePostRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreatePostRequest.php',
-        'App\\Http\\Requests\\UpdateImageRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateImageRequest.php',
-        'App\\Http\\Requests\\UpdatePostRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdatePostRequest.php',
-        'App\\Models\\Image' => __DIR__ . '/../..' . '/app/Models/Image.php',
-        'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
-        'App\\Models\\Truck' => __DIR__ . '/../..' . '/app/Models/Truck.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -593,8 +581,6 @@ class ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Repositories\\BaseRepository' => __DIR__ . '/../..' . '/app/Repositories/BaseRepository.php',
-        'App\\Repositories\\ImageRepository' => __DIR__ . '/../..' . '/app/Repositories/ImageRepository.php',
-        'App\\Repositories\\PostRepository' => __DIR__ . '/../..' . '/app/Repositories/PostRepository.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -704,8 +690,6 @@ class ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
-        'Database\\Factories\\ImageFactory' => __DIR__ . '/../..' . '/database/factories/ImageFactory.php',
-        'Database\\Factories\\PostFactory' => __DIR__ . '/../..' . '/database/factories/PostFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
@@ -5454,10 +5438,10 @@ class ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitcefc6574c4ef1c34da1df168c9c9539f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7e3e88e452cadea7eed117fc64746a24::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7e3e88e452cadea7eed117fc64746a24::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit7e3e88e452cadea7eed117fc64746a24::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit7e3e88e452cadea7eed117fc64746a24::$classMap;
 
         }, null, ClassLoader::class);
     }
